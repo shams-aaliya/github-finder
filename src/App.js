@@ -7,7 +7,7 @@ class App extends Component {
   render(){
   return (
       <div className="App">
-      <Navbar />
+      <Navbar title="Github"/>
       <h1>Hello it's a new day</h1>
       </div>
     );
