@@ -23,6 +23,8 @@ onSubmit = (e) => {
 }
 
   render() {
+    const {showClear,clearUsers} = this.props
+
     return (
       <div>
         <form className='form' onSubmit={this.onSubmit}>
@@ -38,8 +40,8 @@ onSubmit = (e) => {
         className='btn btn-block btn-dark' />
         </form>
         {
-        this.props.showClear && (
-          <button className="btn btn-block btn-light" onClick={this.props.clearUsers}>
+        showClear && (
+          <button className="btn btn-block btn-light" onClick={clearUsers}>
           Clear Users
           </button>)
         }
