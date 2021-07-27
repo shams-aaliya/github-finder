@@ -8,6 +8,8 @@ state = {
 
 static propTypes = {
   text:PropTypes.func.isRequired,
+  clearUsers: PropTypes.func.isRequired,
+  showClear: PropTypes.bool.isRequired
 }
 
 onChange = (e) => {
@@ -35,6 +37,12 @@ onSubmit = (e) => {
         value="Search" 
         className='btn btn-block btn-dark' />
         </form>
+        {
+        this.props.showClear && (
+          <button className="btn btn-block btn-light" onClick={this.props.clearUsers}>
+          Clear Users
+          </button>)
+        }
       </div>
     )
   }
