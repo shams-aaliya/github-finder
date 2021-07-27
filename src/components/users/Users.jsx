@@ -28,4 +28,3 @@ Users.propTypes = {
 }
 
 export default Users; 
-
